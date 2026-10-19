@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Staff Login - Example Service</title></head>
+<body>
+<div id="loginbox">
+<h1>Staff Control Panel Login</h1>
+<form name="loginform" method="post" action="index.php?/Core/Default/Login">
+<input type="hidden" name="_ca" value="login" />
+<input type="hidden" name="_redirectAction" value="" />
+<label>Username <input type="text" name="username" value="" /></label>
+<label>Password <input type="password" name="password" value="" /></label>
+<label>Language
+<select name="languagecode">
+<option value="en-us" selected="selected">English</option>
+</select>
+</label>
+<input type="hidden" name="remember" value="0" />
+<input type="submit" name="submitbutton" value="Login" />
+</form>
+</div>
+</body>
+</html>

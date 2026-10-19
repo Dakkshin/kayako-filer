@@ -1,0 +1,74 @@
+<div class="ticketformcontent">
+<form name="newticketform" method="post" enctype="multipart/form-data" action="https://helpdesk.example.test/support/staff/index.php?/Tickets/Ticket/NewTicketForm">
+  <select name="newticketfrom">
+    <option value="0" selected="selected">Marketing Team; Jane Doe &lt;jane.doe@example.test&gt;</option>
+    <option value="1">Marketing Team; Jane Doe &lt;jane.doe@alias.example.test&gt;</option>
+  </select>
+  <input type="text" name="newticketsubject" value="" />
+  <input type="text" name="taginput_newticketto" value="" />
+  <input type="text" name="taginput_newticketcc" value="" />
+  <select name="newticketownerstaffid">
+    <option value="0">-- Unassigned --</option>
+    <option value="610" selected="selected">Marketing Team; Jane Doe</option>
+    <option value="702">Sales Team; John Smith (Johnny)</option>
+    <option value="703">Amara Perera</option>
+    <option value="704">Client Account Manager - Team#3&nbsp;&nbsp;Mia Lee (Mimi)</option>
+  </select>
+  <select name="newtickettickettypeid">
+    <option value="1">SELECT TYPE</option>
+    <option value="2">Incident</option>
+    <option value="3">Billing</option>
+    <option value="4">Feature Request</option>
+  </select>
+  <select name="newticketticketstatusid">
+    <option value="1" selected="selected">New Tickets</option>
+    <option value="2">Followups - Priority Tickets</option>
+    <option value="3">On Hold</option>
+  </select>
+  <select name="newticketticketpriorityid">
+    <option value="27" selected="selected">Initial Reply</option>
+    <option value="28">24 Hur</option>
+    <option value="29">48 Hur</option>
+  </select>
+  <input type="text" name="taginput_newtickettags" value="Start typing to insert tags..." />
+  <textarea name="newticketcontents"></textarea>
+  <input type="checkbox" name="optnewticket_sendemail" value="1" checked="checked" />
+  <input type="checkbox" name="optnewticket_addkb" value="1" />
+  <input type="checkbox" name="optnewticket_watch" value="1" />
+  <input type="text" name="newticketbillingtimeworked" value="" />
+  <input type="text" name="newticketbillingtimebillable" value="" />
+  <textarea name="newticketticketnotes"></textarea>
+  <input type="hidden" name="notecolor_newticketticketnotes" value="1" />
+  <input type="radio" name="newticketnotetype" value="ticket" checked="checked" />
+  <input type="radio" name="newticketnotetype" value="user" />
+  <input type="text" name="taginput_newticketbcc" value="" />
+  <input type="text" name="newticketdue" value="" />
+  <select name="newticketdue_hour"><option value="6">06</option><option value="7" selected="selected">07</option></select>
+  <select name="newticketdue_minute"><option value="0" selected="selected">00</option><option value="1">01</option></select>
+  <select name="newticketdue_meridian"><option value="am">AM</option><option value="pm" selected="selected">PM</option></select>
+  <input type="text" name="newticketresolutiondue" value="" />
+  <select name="newticketresolutiondue_hour"><option value="6">06</option><option value="7" selected="selected">07</option></select>
+  <select name="newticketresolutiondue_minute"><option value="0" selected="selected">00</option><option value="1">01</option></select>
+  <select name="newticketresolutiondue_meridian"><option value="am">AM</option><option value="pm" selected="selected">PM</option></select>
+  <input type="file" name="newticketattachments[]" value="" />
+  <input type="file" name="newticketattachments[]" value="" />
+  <input type="file" name="newticketattachments[]" value="" />
+  <input type="hidden" name="newticketdepartmentid" value="276" />
+  <input type="radio" name="recurrencetype" value="0" checked="checked" />
+  <input type="radio" name="recurrencetype" value="1" />
+  <input type="radio" name="recurrencetype" value="2" />
+  <input type="radio" name="recurrence_daily_type" value="default" checked="checked" />
+  <input type="text" name="recurrence_daily_step" value="1" />
+  <input type="radio" name="recurrence_daily_type" value="extended" />
+  <input type="radio" name="recurrence_weekly_type" value="default" checked="checked" />
+  <input type="checkbox" name="recurrence_weekly_ismonday" value="1" checked="checked" />
+  <input type="checkbox" name="recurrence_weekly_issaturday" value="1" />
+  <select name="recurrence_monthly_extday"><option value="monday" selected="selected">Monday</option><option value="tuesday">Tuesday</option></select>
+  <input type="text" name="recurrence_start" value="10/06/2026" />
+  <input type="radio" name="recurrence_endtype" value="1" checked="checked" />
+  <input type="radio" name="recurrence_endtype" value="2" />
+  <input type="text" name="recurrence_enddateline" value="" />
+  <input type="hidden" name="isajax" value="1" />
+  <input type="hidden" name="csrfhash" value="PLACEHOLDER_CSRF" />
+</form>
+</div>

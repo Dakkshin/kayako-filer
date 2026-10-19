@@ -1,0 +1,25 @@
+# A new-ticket file for kayako-filer. One ticket per file. Copy this, edit it, then:
+#   python3 kayako_filer.py ticket-plan tickets/my-ticket.toml    (resolve the names, change nothing)
+#   python3 kayako_filer.py ticket-log  tickets/my-ticket.toml    (print the exact body, send nothing)
+#   python3 kayako_filer.py file        tickets/my-ticket.toml    (dry run; sending needs --send --confirm)
+# Names are matched against the live Kayako form, so use the names the dropdowns show.
+# Your own tickets/*.toml are git-ignored; only this example is committed.
+
+department = "Sales & Support - Accounts"
+owner = "Jane Doe"
+to = "jane.doe@example.test"          # one address, or a list; the `sendmail` type emails it
+# cc = ["john.smith@example.test"]
+# type = "Incident"                    # leave out to keep the form's default
+# status = "New Tickets"
+# priority = "Initial Reply"
+# send_email = false                   # leave out to keep the form's default (email goes out)
+
+subject = "TEST - delete me"
+body = """
+Hi,
+
+This is a made-up example ticket body. Keep the old ticket's format and swap the links:
+https://example.test/new-link
+
+Thanks
+"""

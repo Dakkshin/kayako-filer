@@ -1,0 +1,20 @@
+<div class="dialogcontent">
+<form name="newticketdialogform" method="post" action="https://helpdesk.example.test/support/staff/index.php?/Tickets/Ticket/NewTicketForm">
+  <table>
+    <tr><td>
+      <input type="radio" name="tickettype" value="sendmail" checked="checked" /> Send Mail
+      <input type="radio" name="tickettype" value="user" /> User
+    </td></tr>
+    <tr><td>
+      <select name="departmentid">
+        <option value="18" selected="selected">Support&nbsp;-&nbsp;Email&nbsp;Queue</option>
+        <option value="30">Development - Apps</option>
+        <option value="31">|- Development - Bug Reporting</option>
+        <option value="276">Sales&nbsp;&amp;&nbsp;Support&nbsp;-&nbsp;Accounts</option>
+        <option value="277">Sales&nbsp;&amp;&nbsp;Support&nbsp;-&nbsp;Web</option>
+      </select>
+    </td></tr>
+  </table>
+  <input type="hidden" name="csrfhash" value="PLACEHOLDER_CSRF" />
+</form>
+</div>

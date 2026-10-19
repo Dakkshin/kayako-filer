@@ -1,0 +1,10 @@
+{
+  "onlineusershtml": "<ul></ul>",
+  "onlineusersarray": {
+    "201": {"fullname": "Support - Team Lead; Jane Doe"},
+    "202": {"fullname": "Sales Team; John Smith (Johnny)"},
+    "203": {"fullname": "Amara Perera"},
+    "204": {"fullname": "Client Account Manager - Team#3 Mia Lee (Mimi)"},
+    "205": {"fullname": "Support - Billing; Jane Doe Jr"}
+  }
+}

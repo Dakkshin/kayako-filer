@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Synthetic fixture: shape mirrors the Kayako staff ticket view (IDEA.md),
+     values are invented. Ticket/department/owner ids differ from the worked
+     example on purpose: ids are snapshot state, never constants. -->
+<html>
+<head><title>Ticket 1234567 - Staff CP</title></head>
+<body>
+<form name="SearchForm" method="get" action="https://helpdesk.example.test/support/staff/index.php?/Tickets/Manage/Index">
+  <input type="text" name="query" value="promo" />
+</form>
+<form name="View_Ticketform" id="View_Ticketform" method="post" enctype="multipart/form-data"
+      action="https://helpdesk.example.test/support/staff/index.php?/Tickets/Ticket/GeneralSubmit/1234567/inbox/-1/-1/-1/0">
+  <input type="hidden" name="csrfhash" value="PLACEHOLDER_CSRF" />
+  <input type="hidden" name="isajax" value="1" />
+  <input type="text" name="gentags" value="billing,promo" />
+  <select name="gendepartmentid">
+    <option value="10" selected="selected">Sales &amp; Support - Accounts</option>
+    <option value="20">Support</option>
+  </select>
+  <select name="genownerstaffid">
+    <option value="101" selected="selected">Jane Doe</option>
+    <option value="102">John Smith</option>
+    <option value="103">Amara Perera</option>
+  </select>
+  <select name="gentickettypeid">
+    <option value="1" selected="selected">Question</option>
+    <option value="2">Task</option>
+  </select>
+  <select name="genticketstatusid">
+    <option value="1" selected="selected">New Tickets</option>
+    <option value="2">Open</option>
+  </select>
+  <select name="genticketpriorityid">
+    <option value="1">Low</option>
+    <option value="2" selected="selected">Normal</option>
+    <option value="3">High</option>
+  </select>
+  <input type="checkbox" name="genwatch" value="1" checked="checked" />
+  <input type="checkbox" name="gennotify" value="1" />
+  <textarea name="gennotes">Follow up next week</textarea>
+  <input type="submit" name="GeneralSubmit" value="Update" />
+</form>
+</body>
+</html>

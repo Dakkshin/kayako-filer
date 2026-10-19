@@ -1,0 +1,11 @@
+.env
+.session.json
+kayako.toml
+out/
+tickets/*
+!tickets/example.toml
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/

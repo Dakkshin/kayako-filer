@@ -1,0 +1,11 @@
+# Copy this file to kayako.toml (git-ignored) and set base_url to your own Kayako staff panel.
+
+[server]
+# The staff control panel URL, ending in "index.php?". Routes such as /Core/Default/Login are appended as-is.
+base_url = "https://helpdesk.example.test/support/staff/index.php?"
+verify_tls = true
+
+[send]
+# Addresses `file --send` may email (to and cc). Empty, the default, refuses every send.
+# Add your own mailbox for the first TEST ticket; add others only on purpose.
+allow_to = []
